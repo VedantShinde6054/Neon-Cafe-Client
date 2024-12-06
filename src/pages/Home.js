@@ -89,13 +89,15 @@ function Home() {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 mb-4">
                 <div className="about_taital_box">
-                  <h1 className="about_taital">About Our Shop</h1>
-                  <h1 className="about_taital_1">Coffee Distribution</h1>
+                  <h1 className="about_taital">About Our Cafe</h1>
+                  <h1 className="about_taital_1">Neone Cafe</h1>
                   <p className="about_text">
-                    At Neone Café, we focus on delivering the best coffee with
-                    quality and care, bringing people together through our
-                    passion for coffee.
+                    A Welcome to <b>Neone Cafe</b>, a place where flavors come alive! 
+                    From delicious Snacks to refreshing Drinks, we offer an extensive menu to satisfy your cravings. 
                   </p>
+                  <p className="about_text">
+                    For those with a sweet tooth, indulge in our Desserts, perfect for celebrations or just a treat for yourself.
+                  </p><br/>
                   <div className="readmore_btn">
                     <a href="/about">Read More</a>
                   </div>

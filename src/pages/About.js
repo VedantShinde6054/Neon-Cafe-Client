@@ -11,15 +11,17 @@ function About() {
             <div className="row">
               <div className="col-md-6 order-2 order-md-1">
                 <div className="about_taital_box">
-                  <h1 className="about_taital">About Our Shop</h1>
-                  <h1 className="about_taital_1">Coffee Distribution</h1>
+                  <h1 className="about_taital">About Our Cafe</h1>
+                  <h1 className="about_taital_1">Neone Cafe</h1>
                   <p className="about_text">
-                    At Neone Café, we serve the best brews crafted with passion
-                    and precision. Whether you need an energizing espresso or a
-                    smooth cappuccino, we’ve got your caffeine cravings covered.
+                    Welcome to <b>Neone Cafe</b>, a place where flavors come alive! 
+                    From delicious Snacks to refreshing Drinks, we offer an extensive menu to satisfy your cravings. 
+                  </p>
+                  <p className="about_text">
+                    For those with a sweet tooth, indulge in our Desserts, perfect for celebrations or just a treat for yourself.
                   </p><br/>
                   <div className="readmore_btn">
-                    <a href="/blog">Read Our Blogs Too </a>
+                    <a href="/blog">Read Our Blogs Too</a>
                   </div>
                 </div>
               </div>
@@ -28,7 +30,7 @@ function About() {
                   <img
                     src={require("../assets/images/about-img.jpg")}
                     className="about_img"
-                    alt="About Us"
+                    alt="About Neone Café"
                   />
                 </div>
               </div>
@@ -42,9 +44,8 @@ function About() {
         <div className="container text-center">
           <h1 className="section_title">Our Mission</h1>
           <p className="section_text">
-            At Neone Café, our mission is to create a community where coffee
-            lovers gather to share moments of joy, connect, and unwind with the
-            finest blends and flavors.
+            At Neone Café, our mission is to create a welcoming space where food
+            lovers can gather, celebrate, and enjoy delicious meals and indulgent treats.
           </p>
         </div>
       </div>
@@ -56,31 +57,31 @@ function About() {
           <div className="row">
             <div className="col-md-4 text-center mb-4">
               <div className="value_box">
-                <i className="fas fa-leaf values_icon"></i>
-                <h4 className="values_title">Sustainability</h4>
+                <i className="fas fa-pizza-slice values_icon"></i>
+                <h4 className="values_title">Authentic Taste</h4>
                 <p className="values_text">
-                  We prioritize eco-friendly practices, sourcing responsibly to
-                  protect our planet.
+                  From freshly made pizzas to delicious desserts, we bring the
+                  best flavors to your table.
                 </p>
               </div>
             </div>
             <div className="col-md-4 text-center mb-4">
               <div className="value_box">
-                <i className="fas fa-mug-hot values_icon"></i>
-                <h4 className="values_title">Quality</h4>
+                <i className="fas fa-glass-martini-alt values_icon"></i>
+                <h4 className="values_title">Innovation</h4>
                 <p className="values_text">
-                  We serve premium coffee crafted with precision, ensuring every
-                  sip is unforgettable.
+                  Constantly adding new menu items delight our
+                  guests.
                 </p>
               </div>
             </div>
             <div className="col-md-4 text-center mb-4">
               <div className="value_box">
-                <i className="fas fa-heart values_icon"></i>
-                <h4 className="values_title">Community</h4>
+                <i className="fas fa-smile values_icon"></i>
+                <h4 className="values_title">Customer Joy</h4>
                 <p className="values_text">
-                  Bringing people together to share love, laughter, and great
-                  coffee.
+                  Your happiness is our priority. We strive to make every visit
+                  memorable.
                 </p>
               </div>
             </div>
@@ -93,8 +94,7 @@ function About() {
         <div className="container">
           <h1 className="section_title text-center">Contact Us</h1>
           <p className="section_text text-center">
-            We’d love to hear from you! Feel free to reach out via phone or
-            email.
+            Have questions or feedback? We’d love to hear from you!
           </p>
           <div className="contact_details text-center">
             <p className="contact_item">
