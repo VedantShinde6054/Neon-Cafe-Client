@@ -42,10 +42,9 @@ function About() {
       {/* Our Mission Section */}
       <div className="mission_section layout_padding">
         <div className="container text-center">
-          <h1 className="section_title">Our Mission</h1>
+          <h1 className="section_title">Our Speciality</h1>
           <p className="section_text">
-            At Neone Café, our mission is to create a welcoming space where food
-            lovers can gather, celebrate, and enjoy delicious meals and indulgent treats.
+          Each dish is thoughtfully crafted with quality ingredients and authentic flavors that bring out the best in every cuisine we serve. 
           </p>
         </div>
       </div>
@@ -98,12 +97,11 @@ function About() {
           </p>
           <div className="contact_details text-center">
             <p className="contact_item">
-              <i className="fas fa-phone-alt contact_icon"></i> Phone: +91 98765
-              43210
+              <i className="fas fa-phone-alt contact_icon"></i> Phone: +91 8055935593
             </p>
             <p className="contact_item">
               <i className="fas fa-envelope contact_icon"></i> Email:{" "}
-              <a href="mailto:info@neonecafe.com">info@neonecafe.com</a>
+              <a href="mailto:info@neonecafe.com">neonecafekopargaon@gmail.com</a>
             </p>
           </div>
         </div>

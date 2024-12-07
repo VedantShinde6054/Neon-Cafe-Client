@@ -220,6 +220,30 @@ img {
 }
 
 
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+  /* Add background to labels (links) in the dropdown */
+  .navbar-custom .nav-link {
+    background-color: #333333; /* Solid dark background for labels */
+    margin: 5px 0; /* Add spacing between links */
+    padding: 10px 15px; /* Add padding to links for better touch interaction */
+    border-radius: 8px; /* Rounded edges for a clean look */
+    text-align: center; /* Center-align text */
+  }
+
+  .navbar-custom .nav-link:hover {
+    background-color: #f01c1c; /* Highlight color on hover */
+    color: white;
+  }
+
+  /* Hide logo in mobile view */
+  .navbar-brand {
+    display: none !important;
+  }
+}
+
+
+
 
 /* HOME PAGE CSS */
 
@@ -890,7 +914,66 @@ img {
   .footer_text p a:hover {
     color: #f01c1c;
   }
+
+  .footer_social_icon .z-letter {
+    font-size: .8rem; /* Adjust size as needed */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; /* Ensure it takes full height of the container */
+    width: 100%; /* Ensure it takes full width of the container */
+  }
   
+  
+  /* Opening Hours */
+.opening_hours {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.opening_hours h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f01c1c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.opening_hours ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 2;
+}
+
+.opening_hours li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.opening_hours li:before {
+  content: "\f017"; /* Font Awesome clock icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #f01c1c;
+}
+
+
+
   /* HOME PAGE CSS ENDS WITH FOOTER */
 
   /* ABOUT PAGE */
