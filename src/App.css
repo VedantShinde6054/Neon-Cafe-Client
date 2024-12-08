@@ -250,7 +250,8 @@ img {
 
 /* Header Section */
 .header_section {
-    background: url('assets/images/blur-bg.jpg') no-repeat center center/cover;
+    /* background: url('assets/images/blur-bg.jpg') no-repeat center center/cover; */
+    background: url('assets/images/neone-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     color: white;
     display: flex;
@@ -261,7 +262,7 @@ img {
 }
 
 .banner_section .banner_taital {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 800;
     text-transform: uppercase;
     animation: zoomIn 1s ease-in-out;
@@ -269,7 +270,7 @@ img {
 }
 
 .banner_section .neone-text {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 800;
     text-transform: uppercase;
     animation: neonAnimation 3s infinite alternate; /* Animation for neon effect */
@@ -307,6 +308,7 @@ img {
     margin: 20px 0;
     animation: slideInUp 1.5s ease-in-out;
     color: #fff;
+    text-transform: capitalize;
     /* text-shadow: 0 0 10px #f01c1c, 0 0 15px #f01c1c;  */
 }
 
@@ -831,15 +833,16 @@ img {
 
   @media (max-width: 767px) {
     .banner_section .banner_taital {
-        font-size: 2.5rem; /* Smaller font size for mobile */
+        font-size: 2.7rem; /* Smaller font size for mobile */
     }
 
     .banner_section .neone-text {
-        font-size: 2.5rem; /* Smaller font size for mobile */
+        font-size: 2.7rem; /* Smaller font size for mobile */
     }
 
     .banner_section .banner_text {
-        font-size: 1rem; /* Adjusting the font size of the banner text for mobile */
+        font-size: .8em; /* Adjusting the font size of the banner text for mobile */
+        text-transform: capitalize;
     }
 }
   
