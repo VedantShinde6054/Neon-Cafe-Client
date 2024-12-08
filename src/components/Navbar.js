@@ -5,15 +5,6 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div className="container">
-        {/* Logo */}
-        <a className="navbar-brand mx-auto d-lg-none" href="/">
-          <img
-            src={require("../assets/images/logo.png")}
-            alt="Logo"
-            className="navbar-logo"
-          />
-        </a>
-
         {/* Navbar Toggler for Mobile */}
         <button
           className="navbar-toggler"
