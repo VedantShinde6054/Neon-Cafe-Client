@@ -9,6 +9,7 @@ function Home() {
   const [menuItems, setMenuItems] = useState([]); // State to store menu items
   const [blogs, setBlogs] = useState([]); // State to store blog items
   const [expandedBlogs, setExpandedBlogs] = useState({}); // State for expanded blogs
+  const [isFirstImage, setIsFirstImage] = useState(true); // State for hero image toggle
 
   // Fetch menu items from Firestore
   const fetchMenuItems = async () => {
@@ -34,6 +35,17 @@ function Home() {
     }));
   };
 
+  // Toggle Hero Section Image
+  const toggleImage = () => {
+    setIsFirstImage((prev) => !prev);
+  };
+
+  //automatically toggle images at an interval
+  useEffect(() => {
+    const interval = setInterval(toggleImage, 4000); // Change every 4 seconds
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [toggleImage]);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of animation (in ms)
@@ -54,6 +66,39 @@ function Home() {
 
   return (
     <div>
+      {/* <section className="hero-wrap">
+        <div
+          className={`background-layer ${isFirstImage ? "visible" : "hidden"}`}
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/bg_1.jpg)`,
+          }}
+        ></div>
+        <div
+          className={`background-layer ${!isFirstImage ? "visible" : "hidden"}`}
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/bg_2.jpg)`,
+          }}
+        ></div>
+        <div className="overlay"></div>
+        <div className="content">
+          <div className="text w-100 mt-5 text-center">
+            <span className="subheading"> Cafe Neone</span>
+            <h1>
+              {isFirstImage ? "Servicing Since 2016" : "Best Quality Food"}
+            </h1>
+            <span className="subheading-2 sub">cafeteria</span>
+          </div>
+          <div className="toggle-icons">
+            <span className="icon-left" onClick={toggleImage}>
+              &#10094;
+            </span>
+            <span className="icon-right" onClick={toggleImage}>
+              &#10095;
+            </span>
+          </div>
+        </div>
+      </section> */}
+
       {/* Header Section */}
       <div className="header_section">
         <div className="banner_section layout_padding">
@@ -92,12 +137,15 @@ function Home() {
                   <h1 className="about_taital">About Our Cafe</h1>
                   <h1 className="about_taital_1">Neone Cafe</h1>
                   <p className="about_text">
-                    A Welcome to <b>Neone Cafe</b>, a place where flavors come alive! 
-                    From delicious Snacks to refreshing Drinks, we offer an extensive menu to satisfy your cravings. 
+                    A Welcome to <b>Neone Cafe</b>, a place where flavors come
+                    alive! From delicious Snacks to refreshing Drinks, we offer
+                    an extensive menu to satisfy your cravings.
                   </p>
                   <p className="about_text">
-                    For those with a sweet tooth, indulge in our Desserts, perfect for celebrations or just a treat for yourself.
-                  </p><br/>
+                    For those with a sweet tooth, indulge in our Desserts,
+                    perfect for celebrations or just a treat for yourself.
+                  </p>
+                  <br />
                   <div className="readmore_btn">
                     <a href="/about">Read More</a>
                   </div>
@@ -170,7 +218,9 @@ function Home() {
                     <h4 className="date_text">{blog.date}</h4>
                     <h4 className="prep_text">{blog.title}</h4>
                     <p className="lorem_text">
-                      {expandedBlogs[index] ? blog.body : blog.body.slice(0, 100) + "..."}
+                      {expandedBlogs[index]
+                        ? blog.body
+                        : blog.body.slice(0, 100) + "..."}
                     </p>
 
                     <button
