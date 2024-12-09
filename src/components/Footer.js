@@ -30,7 +30,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.zomato.com"
+                  href="https://www.zomato.com/kopargaon/cafe-neone-kopargaon-locality/order"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -41,7 +41,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@neonecafe.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=cafeneonkopargaon@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
